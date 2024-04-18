@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from "../Button/Button";
-import {usetelegram} from "../../hooks/useTelegram";
+import {useTelegram} from "../../hooks/useTelegram";
 import './Header.css'
 
 const Header = () => {
 
-    const {user, onClose} = usetelegram()
+    const {user, onClose} = useTelegram()
 
     return (
         <div className={'header'}>
